@@ -1,8 +1,14 @@
 guess = 0
-x = int(input("Enter your number: "))
-while guess ** 2 < x:
+flag = True
+num =  int(input("Enter Number: "))
+while guess ** 2 < num and flag:
     guess += 1
-    if guess ** 2  == x:
-        print(f"This is a perfect square: {x}")
+    if num < 0:
+        flag = False
+if guess ** 2 == num:
+    print(f'{guess} is the perfect square for {num} ')
+else:
+    if num < 0:
+        print("you accidently end up with a negative number.")
     else:
-        print(f'{x} is not a perfect square')
+        print("opps !! this is not a perfect square..")

@@ -1,5 +1,5 @@
 sum = 0 
 for _ in range(10):
-    sum += _
+    sum += 1
 
 print(sum)
